@@ -1,5 +1,6 @@
 def greet(name: str) -> str:
-    """Return a greeting for name."""
+    """Trim surrounding whitespace from name, defaulting blank names to world."""
+    name = name.strip() or "world"
     return f"Hello, {name}!"
 
 
